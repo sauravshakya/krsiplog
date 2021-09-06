@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import {Input} from 'antd';
+import {Input, MenuProps} from 'antd';
 
 export const Head = styled.h1`
     color: #390179;
     margin-left: 20%;
+    margin-top: 7%;
 `;
 export const Title = styled.h2`
     color: #251A43;    
@@ -14,10 +15,16 @@ export const Main = styled.div`
 `;
 export const CustomInput = styled(Input)`
     background-color: #F5F2F8;
-    border-radius: 5px;
-    border:none;
+    border-radius: 10px;
+    border: 1px solid #F5F2F8;
+    font-size: 12px;
+    padding: 7px 18px;
     &:hover{
-        border: 1px solid rgb(215, 204, 228);
+        border-color: rgb(215, 204, 228);
+    }
+    &:focus{
+        border-color: rgb(215, 204, 228);
+        box-shadow: none;
     }
     margin-bottom: 25px;
 `;
@@ -28,11 +35,94 @@ export const Wrapper = styled.div`
     display: flex;
 `;
 export const Photofixer = styled.div`
-    width: 60%;
-    height: 50%;
-    // float: right;
-    flex: 60%;
+    background-color: rgb(245, 242, 248);
+    width: 63%;
+    height: 100vh;
+    position: relative;
+    flex: 85% 100%;
+    
+    .image{
+        position: absolute;
+        left: -52px;
+        bottom: 0;
+    }
+    
 `;
 export const WrapperOne = styled.div`
     flex: 40%;
 `;
+export const ButtonWrapper = styled.div`
+    .ant-btn{
+        background-color: #390179;
+        border-color: #390179;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+`;
+export const WrapperCheck = styled.div`
+    .ant-checkbox-checked .ant-checkbox-inner{
+        background-color: #390179;
+        border-color: #390179;
+        border-radius: 30%;
+        &:hover{
+            border: none;
+        }
+    }
+`;
+
+export const Official = styled.div`
+    margin-top: 30px;
+    a{
+        font-size: 0.6rem;
+        margin-right: 40px;
+        &:hover{
+            color: #390179;
+        }
+    }
+`;
+// export const Menu = (
+//     <Menu>
+//       <Menu.Item key="0">
+//         <a href="https://www.antgroup.com">1st menu item</a>
+//       </Menu.Item>
+//       <Menu.Item key="1">
+//         <a href="https://www.aliyun.com">2nd menu item</a>
+//       </Menu.Item>
+//       <Menu.Divider />
+//       <Menu.Item key="3">3rd menu item</Menu.Item>
+//     </Menu>
+//   );
+//   <Dropdown overlay={menu} trigger={['click']}>
+//     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
+//       Click me <DownOutlined />
+//     </a>
+//   </Dropdown>
+
+export const Divider = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-end;
+    justify-content: space-between;
+`;
+
+export const Placement = styled.div`
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    padding: 0.5rem;
+
+    .AppCountry{
+        font-size: 10px;
+        border: 1px solid #390179; 
+        border-radius: 4px;
+        &:focus{
+            border:none;
+        }
+    }
+    img{
+        margin-right: 10px;
+    }
+`;
+  
