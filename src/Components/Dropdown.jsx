@@ -40,11 +40,11 @@ function LanguageDropdown(){
 
   return(
     <Select defaultValue="EN" className="AppCountry" dropdownStyle={{ borderRadius: '10px', color:'#390179', padding:'10px'}} style={{ width: 120 }} onChange={handleChange}>
-      <Option style={{ fontSize:'10px'}} value="EN"><img src="./uk.svg" />English</Option>
-      <Option style={{ fontSize:'10px'}} value="ES"><img src="./spain.svg" />Espanol</Option>
-      <Option style={{ fontSize:'10px'}} value="FR"><img src="./france.svg" />Francais</Option>
-      <Option style={{ fontSize:'10px'}} value="DA"><img src="./denmark.svg" />Dansk</Option>
-      <Option style={{ fontSize:'10px'}} value="DE"><img src="./germany.svg" />Deutsch</Option>
+      <Option style={{ fontSize:'10px'}} value="EN"><img src="./uk.svg" alt="en" />English</Option>
+      <Option style={{ fontSize:'10px'}} value="ES"><img src="./spain.svg" alt="es" />Espanol</Option>
+      <Option style={{ fontSize:'10px'}} value="FR"><img src="./france.svg" alt="fr" />Francais</Option>
+      <Option style={{ fontSize:'10px'}} value="DA"><img src="./denmark.svg" alt="da" />Dansk</Option>
+      <Option style={{ fontSize:'10px'}} value="DE"><img src="./germany.svg" alt="de" />Deutsch</Option>
     </Select>
   );
   

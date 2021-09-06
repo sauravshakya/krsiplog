@@ -18,7 +18,7 @@ function App() {
     <Wrapper>
     <WrapperOne>
     <Head>
-      krispcall
+      <img src="./krispcall-logo.svg" alt="logo" height="50px" width="100px"/>
     </Head>
     <Main>
     <Title>
