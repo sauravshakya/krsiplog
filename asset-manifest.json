@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/krsiplog/static/css/main.3ebf29b2.chunk.css",
+    "main.js": "/krsiplog/static/js/main.8d79ef21.chunk.js",
+    "main.js.map": "/krsiplog/static/js/main.8d79ef21.chunk.js.map",
+    "runtime-main.js": "/krsiplog/static/js/runtime-main.cc311470.js",
+    "runtime-main.js.map": "/krsiplog/static/js/runtime-main.cc311470.js.map",
+    "static/css/2.786ae0dd.chunk.css": "/krsiplog/static/css/2.786ae0dd.chunk.css",
+    "static/js/2.99d6f3a6.chunk.js": "/krsiplog/static/js/2.99d6f3a6.chunk.js",
+    "static/js/2.99d6f3a6.chunk.js.map": "/krsiplog/static/js/2.99d6f3a6.chunk.js.map",
+    "static/js/3.270d4592.chunk.js": "/krsiplog/static/js/3.270d4592.chunk.js",
+    "static/js/3.270d4592.chunk.js.map": "/krsiplog/static/js/3.270d4592.chunk.js.map",
+    "index.html": "/krsiplog/index.html",
+    "static/css/2.786ae0dd.chunk.css.map": "/krsiplog/static/css/2.786ae0dd.chunk.css.map",
+    "static/css/main.3ebf29b2.chunk.css.map": "/krsiplog/static/css/main.3ebf29b2.chunk.css.map",
+    "static/js/2.99d6f3a6.chunk.js.LICENSE.txt": "/krsiplog/static/js/2.99d6f3a6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cc311470.js",
+    "static/css/2.786ae0dd.chunk.css",
+    "static/js/2.99d6f3a6.chunk.js",
+    "static/css/main.3ebf29b2.chunk.css",
+    "static/js/main.8d79ef21.chunk.js"
+  ]
+}
