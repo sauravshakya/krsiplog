@@ -8,6 +8,7 @@ import { Form, Button, Checkbox } from 'antd';
 import { EyeOutlined } from '@ant-design/icons';
 import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement } from "./Styles";
 import {  } from 'react-icons/fa';
+import krisplogo from './asset/krispcall-logo.svg';
 
 function App() {
   const onFinish = (values) => {
@@ -18,7 +19,7 @@ function App() {
     <Wrapper>
     <WrapperOne>
     <Head>
-      <img src="./krispcall-logo.svg" alt="logo" height="50px" width="100px"/>
+      <img src={ krisplogo } alt="logo" height="50px" width="100px"/>
     </Head>
     <Main>
     <Title>
