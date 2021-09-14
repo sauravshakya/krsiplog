@@ -6,7 +6,7 @@ import { LangStyle, LangOut } from './DropStyle.jsx'
 
 // import { useState, useMemo } from "react";
 // import Select from 'react-select'
-import countryList from 'react-select-country-list';
+// import countryList from 'react-select-country-list';
 
 import denmark from './Framephoto/denmark.svg';
 import uk from './Framephoto/uk.svg';

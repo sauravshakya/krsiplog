@@ -1,17 +1,21 @@
 import styled from "styled-components";
 import {Input, MenuProps} from 'antd';
 
-export const Head = styled.h1`
+export const Head = styled.div`
     color: #390179;
-    margin-left: 20%;
-    margin-top: 7%;
+    margin-left: 160px;
+    margin-top: 62px;
+    .logo{
+        width: 151px;
+        height: 36px;
+    }
 `;
 export const Title = styled.h2`
     color: #251A43;    
 `;
 export const Main = styled.div`
-    margin-top: 15%;
-    margin-left: 20%;
+    margin-top: 254px;
+    margin-left: 160px;
 `;
 export const CustomInput = styled(Input)`
     background-color: #F5F2F8;
@@ -45,8 +49,7 @@ export const Photofixer = styled.div`
         position: absolute;
         left: -52px;
         bottom: 0;
-    }
-    
+    } 
 `;
 export const WrapperOne = styled.div`
     flex: 40%;
@@ -72,7 +75,7 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    margin-top: 30px;
+    margin-top: 315px;
     a{
         font-size: 0.6rem;
         margin-right: 40px;
@@ -109,8 +112,8 @@ export const Divider = styled.div`
 
 export const Placement = styled.div`
     position: absolute;
-    right: 100px;
-    top: 50px;
+    right: 160px;
+    top: 60px;
     padding: 0.5rem;
 
     .AppCountry{

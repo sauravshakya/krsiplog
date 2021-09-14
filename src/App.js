@@ -19,7 +19,7 @@ function App() {
     <Wrapper>
     <WrapperOne>
     <Head>
-      <img src={ krisplogo } alt="logo" height="50px" width="100px"/>
+      <img src={ krisplogo } className="logo" alt="logo"/>
     </Head>
     <Main>
     <Title>
