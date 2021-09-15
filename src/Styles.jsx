@@ -10,26 +10,28 @@ export const Head = styled.div`
         height: 36px;
     }
 `;
-export const Title = styled.h2`
-    color: #251A43;    
+export const Title = styled.h2`   
     margin-bottom: 60px;
     font-family: Manrope;
+    color: rgb(37, 26, 67);
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 32px;
     line-height: 32px;
     
 `;
 export const Main = styled.div`
-    margin-top: 254px;
+    margin-top: 224px;
     margin-left: 160px;
 `;
-export const CustomLabel = styled.p`
+export const CustomLabel = styled.label`
     width: 96px;
     height: 14px;
-    font-family: Manrope;
+    color: rgb(86, 77, 109);
+    padding-bottom: 6px;
+    font-family: Manrope,sans-serif;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 14px;
 `;
@@ -37,11 +39,13 @@ export const CustomInput = styled(Input)`
     background-color: #F5F2F8;
     border-radius: 10px;
     border: 1px solid #F5F2F8;
-    font-size: 18px;
+    color: rgb(61, 51, 88);
     width: 450px;
     height: 48px;
-    
-    padding: 7px 18px;
+    font-weight: 400;
+    font-size: 1.125rem;
+    padding: 15px 20px;
+    /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
 
     &:hover{
         border-color: rgb(215, 204, 228);
@@ -53,8 +57,7 @@ export const CustomInput = styled(Input)`
     margin-bottom: 25px;
 `;
 export const Sizer = styled.div`
-
-    font-size: 0.6rem;
+    font-size: 14px;
 `;
 export const Wrapper = styled.div`
     display: flex;
@@ -62,14 +65,16 @@ export const Wrapper = styled.div`
 export const Photofixer = styled.div`
     background-color: rgb(245, 242, 248);
     width: 63%;
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
     flex: 85% 100%;
     
     .image{
         position: absolute;
-        left: -52px;
-        bottom: 0;
+        left: -72px;
+        bottom: -13px;
+        width: 105%;
+        height: 63%;
     } 
 `;
 export const WrapperOne = styled.div`
@@ -98,7 +103,7 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    margin-top: 315px;
+    margin-top: 240px;
     a{
         font-size: 0.6rem;
         margin-right: 40px;
@@ -127,6 +132,7 @@ export const Official = styled.div`
 
 export const Divider = styled.div`
     display: flex;
+    width: 450px;
     flex-direction: row;
     align-content: center;
     align-items: flex-end;
