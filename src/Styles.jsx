@@ -6,8 +6,8 @@ export const Head = styled.div`
     margin-left: 160px;
     margin-top: 62px;
     .logo{
-        width: 151px;
-        height: 36px;
+        width: 177px;
+        height: 43px;
     }
 `;
 export const Title = styled.h2`   
@@ -164,7 +164,7 @@ export const Divider = styled.div`
 
 export const Placement = styled.div`
     position: absolute;
-    right: 160px;
+    right: 130px;
     top: 60px;
     padding: 0.5rem;
 
