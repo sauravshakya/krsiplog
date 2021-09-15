@@ -12,17 +12,37 @@ export const Head = styled.div`
 `;
 export const Title = styled.h2`
     color: #251A43;    
+    margin-bottom: 60px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    
 `;
 export const Main = styled.div`
     margin-top: 254px;
     margin-left: 160px;
 `;
+export const CustomLabel = styled.p`
+    width: 96px;
+    height: 14px;
+    font-family: Manrope;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+`;
 export const CustomInput = styled(Input)`
     background-color: #F5F2F8;
     border-radius: 10px;
     border: 1px solid #F5F2F8;
-    font-size: 12px;
+    font-size: 18px;
+    width: 450px;
+    height: 48px;
+    
     padding: 7px 18px;
+
     &:hover{
         border-color: rgb(215, 204, 228);
     }
@@ -33,6 +53,7 @@ export const CustomInput = styled(Input)`
     margin-bottom: 25px;
 `;
 export const Sizer = styled.div`
+
     font-size: 0.6rem;
 `;
 export const Wrapper = styled.div`
@@ -58,6 +79,8 @@ export const ButtonWrapper = styled.div`
     .ant-btn{
         background-color: #390179;
         border-color: #390179;
+        width: 450px;
+        height: 48px;
         margin-top: 10px;
         margin-bottom: 20px;
         border-radius: 10px;

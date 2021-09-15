@@ -6,7 +6,7 @@ import './index.css';
 import { Form, Button, Checkbox } from 'antd';
 // import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { EyeOutlined } from '@ant-design/icons';
-import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement } from "./Styles";
+import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement, CustomLabel } from "./Styles";
 import {  } from 'react-icons/fa';
 import krisplogo from './asset/krispcall-logo.svg';
 
@@ -43,7 +43,7 @@ function App() {
       //   },
       // ]}
     >
-      <p>Email Address</p> 
+      <CustomLabel>Email Address</CustomLabel> 
       <CustomInput placeholder="donjohn@krispcall.com" />
     </div>
     <div
@@ -56,7 +56,7 @@ function App() {
       //   },
       // ]}
     >
-      <p>Password</p>
+      <CustomLabel>Password</CustomLabel>
       <CustomInput
         type="password"
         placeholder="*******************"
