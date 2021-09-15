@@ -72,7 +72,7 @@ function App() {
         </WrapperCheck>
       </Form.Item>
       <a className="login-form-forgot" href="">
-        Forgot password?
+        Forgot Password?
       </a>
       </Divider>
     </Form.Item>
@@ -85,7 +85,7 @@ function App() {
       </ButtonWrapper>
       <p>Dont have an account?</p>
       <Sizer>
-        <a href="">Sign up?</a>
+        <a>Sign up?</a>
       </Sizer>
       <Official>
         <a href="">Terms of Use</a>

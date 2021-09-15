@@ -54,10 +54,20 @@ export const CustomInput = styled(Input)`
         border-color: rgb(215, 204, 228);
         box-shadow: none;
     }
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 `;
 export const Sizer = styled.div`
-    font-size: 14px;
+    font-size: 18px;
+    font-family: Manrope,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
+    .a{
+        color: rgb(26, 99, 244) !important; 
+        cursor: pointer;
+        font-weight: 700;
+        margin-top: 50px;
+    }
 `;
 export const Wrapper = styled.div`
     display: flex;
@@ -92,6 +102,10 @@ export const ButtonWrapper = styled.div`
     }
 `;
 export const WrapperCheck = styled.div`
+    font-family: Manrope,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
     .ant-checkbox-checked .ant-checkbox-inner{
         background-color: #390179;
         border-color: #390179;
@@ -103,10 +117,13 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    margin-top: 240px;
+    margin-top: 230px;
     a{
-        font-size: 0.6rem;
-        margin-right: 40px;
+        font-size: 12px;
+        font-family: Manrope,sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        margin-right: 60px;
         &:hover{
             color: #390179;
         }
@@ -137,6 +154,12 @@ export const Divider = styled.div`
     align-content: center;
     align-items: flex-end;
     justify-content: space-between;
+
+    font-family: Manrope,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    
 `;
 
 export const Placement = styled.div`
