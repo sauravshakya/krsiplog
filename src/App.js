@@ -68,7 +68,7 @@ function App() {
       <Divider>
       <Form.Item name="remember" valuePropName="checked" noStyle>
         <WrapperCheck>
-          <Checkbox>Keep me logged in</Checkbox>
+          <Checkbox >Keep me logged in</Checkbox>
         </WrapperCheck>
       </Form.Item>
       <a className="login-form-forgot" href="">
@@ -83,17 +83,17 @@ function App() {
           Log in
         </Button>
       </ButtonWrapper>
-      <p>Dont have an account?</p>
       <Sizer>
+        <p>Dont have an account?</p>
         <a>Sign up?</a>
-      </Sizer>
-      <Official>
-        <a href="">Terms of Use</a>
-        <a href="">Privacy Policy</a>
-      </Official>  
+      </Sizer> 
     </Form.Item>
   </Form>
   </Main>
+  <Official>
+        <a href="">Terms of Use</a>
+        <a href="">Privacy Policy</a>
+  </Official> 
   </WrapperOne>
   <Photofixer>
     <PhotoDesign></PhotoDesign>

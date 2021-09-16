@@ -12,9 +12,6 @@ code {
     monospace;
 }
 
-.login-form {
-  max-width: 300px;
-}
 .login-form p{
   margin-bottom: 0;
   font-size: 14px;

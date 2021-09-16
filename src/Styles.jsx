@@ -6,8 +6,8 @@ export const Head = styled.div`
     margin-left: 160px;
     margin-top: 62px;
     .logo{
-        width: 177px;
-        height: 43px;
+        width: 151px;
+        height: 36px;
     }
 `;
 export const Title = styled.h2`   
@@ -21,10 +21,12 @@ export const Title = styled.h2`
     
 `;
 export const Main = styled.div`
-    margin-top: 224px;
+    margin-top: 223px;
     margin-left: 160px;
+    margin-right: 160px;
 `;
 export const CustomLabel = styled.label`
+display: block;
     width: 96px;
     height: 14px;
     color: rgb(86, 77, 109);
@@ -34,6 +36,8 @@ export const CustomLabel = styled.label`
     font-weight: 700;
     font-size: 14px;
     line-height: 14px;
+    margin-bottom: 6px;
+
 `;
 export const CustomInput = styled(Input)`
     background-color: #F5F2F8;
@@ -45,6 +49,7 @@ export const CustomInput = styled(Input)`
     font-weight: 400;
     font-size: 1.125rem;
     padding: 15px 20px;
+    margin-bottom: 46px !important;
     /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
 
     &:hover{
@@ -57,16 +62,23 @@ export const CustomInput = styled(Input)`
     margin-bottom: 35px;
 `;
 export const Sizer = styled.div`
-    font-size: 18px;
     font-family: Manrope,sans-serif;
     font-style: normal;
     font-weight: 700;
 
     .a{
+        font-size: 12px;
         color: rgb(26, 99, 244) !important; 
         cursor: pointer;
         font-weight: 700;
         margin-top: 50px;
+    }
+    p{
+        color: #9E99AB;
+        font-family: Manrope;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
     }
 `;
 export const Wrapper = styled.div`
@@ -74,21 +86,22 @@ export const Wrapper = styled.div`
 `;
 export const Photofixer = styled.div`
     background-color: rgb(245, 242, 248);
-    width: 63%;
-    /* height: 100vh; */
+    flex: 60.521%;
+    width: 1162px;
+    height: 1080px;
     position: relative;
     flex: 85% 100%;
     
     .image{
         position: absolute;
         left: -72px;
-        bottom: -13px;
-        width: 105%;
+        bottom: 0px;
+        width: 106%;
         height: 63%;
     } 
 `;
 export const WrapperOne = styled.div`
-    flex: 40%;
+    flex: 39.4793%;
 `;
 export const ButtonWrapper = styled.div`
     .ant-btn{
@@ -96,9 +109,13 @@ export const ButtonWrapper = styled.div`
         border-color: #390179;
         width: 450px;
         height: 48px;
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
         border-radius: 10px;
+
+        font-family: Manrope,sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
     }
 `;
 export const WrapperCheck = styled.div`
@@ -110,14 +127,19 @@ export const WrapperCheck = styled.div`
         background-color: #390179;
         border-color: #390179;
         border-radius: 30%;
-        &:hover{
-            border: none;
-        }
     }
+    /* &:hover{
+        border: #390179;
+    } */
+    .ant-checkbox-checked .ant-checkbox-inner:hover{
+        border: #390179;
+    }
+
 `;
 
 export const Official = styled.div`
-    margin-top: 230px;
+    margin-top: 219px;
+    margin-left: 160px;
     a{
         font-size: 12px;
         font-family: Manrope,sans-serif;
@@ -159,15 +181,17 @@ export const Divider = styled.div`
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+
+    margin-top: 5px;
+    margin-bottom: 24px;
     
 `;
 
 export const Placement = styled.div`
     position: absolute;
-    right: 130px;
+    right: 160px;
     top: 60px;
     padding: 0.5rem;
-
     .AppCountry{
         font-size: 10px;
         border: 1px solid #390179; 
