@@ -5,7 +5,7 @@ import 'antd/dist/antd.css';
 import './index.css';
 import { Form, Button, Checkbox } from 'antd';
 // import { UserOutlined, LockOutlined } from '@ant-design/icons';
-import { EyeOutlined } from '@ant-design/icons';
+import { EyeTwoTone , EyeInvisibleOutlined } from '@ant-design/icons';
 import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement, CustomLabel } from "./Styles";
 import {  } from 'react-icons/fa';
 import krisplogo from './asset/krispcall-logo.svg';
@@ -14,6 +14,7 @@ function App() {
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
   };
+  let visible;
   return (
     <>
     <Wrapper>
@@ -60,6 +61,7 @@ function App() {
       <CustomInput
         type="password"
         placeholder="*******************"
+        iconRender= {<EyeTwoTone />}
       />
       {/* <EyeOutlined /> */}
     </div>

@@ -59,6 +59,9 @@ export const CustomInput = styled(Input)`
         border-color: rgb(215, 204, 228);
         box-shadow: none;
     }
+    &::placeholder{
+        color: #aaa5b6;
+    }
     margin-bottom: 35px;
 `;
 export const Sizer = styled.div`
@@ -123,18 +126,33 @@ export const WrapperCheck = styled.div`
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    .ant-checkbox-checked .ant-checkbox-inner{
+    /* .ant-checkbox-checked .ant-checkbox-inner{
         background-color: #390179;
         border-color: #390179;
         border-radius: 30%;
-    }
+    } */
     /* &:hover{
         border: #390179;
     } */
-    .ant-checkbox-checked .ant-checkbox-inner:hover{
+    /* .ant-checkbox-checked .ant-checkbox-inner:hover{
         border: #390179;
-    }
+    } */
 
+    .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #390179;
+        border-color: #390179;
+    }   
+    .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+    .ant-checkbox:hover .ant-checkbox-inner,
+    .ant-checkbox-input:focus+.ant-checkbox-inner {
+        border-color: #390179 !important;
+    }
+    .ant-checkbox-indeterminate .ant-checkbox-inner::after {
+        background-color: #390179;
+    }
+    .ant-checkbox-wrapper:focus-visible .ant-checkbox-inner{
+        border: none;
+    }
 `;
 
 export const Official = styled.div`
