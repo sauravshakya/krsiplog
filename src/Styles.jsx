@@ -62,7 +62,40 @@ export const CustomInput = styled(Input)`
     &::placeholder{
         color: #aaa5b6;
     }
-    margin-bottom: 35px;
+    
+`;
+export const Pass = styled.div`
+    .ant-input-password{
+        background-color: #F5F2F8;
+        border-radius: 10px;
+        width: 100%;
+        height: 48px;
+        padding: 0px 18px 0px 0px;
+        margin-bottom: 22px !important;
+        .ant-input:focus, .ant-input-focused{
+            border: none;
+        }
+        .ant-input:placeholder-shown{
+            background-color: #F5F2F8 !important;
+            font-size: 1.125rem;
+            font-weight: 400;
+            border: 1px solid #F5F2F8;    
+            color: rgb(61, 51, 88);
+            padding: 15px 20px;
+        }
+        &:hover{
+        border-color: rgb(215, 204, 228) !important;
+        }
+        &:focus{
+            border-color: rgb(215, 204, 228) !important;
+            box-shadow: none;
+            border-color: rgb(215, 204, 228) !important;
+
+        }
+        &::placeholder{
+            color: #aaa5b6;
+        }
+    }
 `;
 export const Sizer = styled.div`
     font-family: Manrope,sans-serif;

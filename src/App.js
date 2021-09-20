@@ -3,10 +3,10 @@ import PhotoDesign from './Components/Photo'
 import LanguageDropdown from './Components/Dropdown'
 import 'antd/dist/antd.css';
 import './index.css';
-import { Form, Button, Checkbox } from 'antd';
+import { Form, Button, Checkbox,Input } from 'antd';
 // import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { EyeTwoTone , EyeInvisibleOutlined } from '@ant-design/icons';
-import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement, CustomLabel } from "./Styles";
+import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement, CustomLabel, Pass} from "./Styles";
 import {  } from 'react-icons/fa';
 import krisplogo from './asset/krispcall-logo.svg';
 
@@ -57,14 +57,21 @@ function App() {
       //   },
       // ]}
     >
-      <CustomLabel>Password</CustomLabel>
-      <CustomInput
+      {/* <CustomInput
         type="password"
         placeholder="*******************"
         iconRender= {<EyeTwoTone />}
-      />
-      {/* <EyeOutlined /> */}
+      /> */}
     </div>
+
+      <CustomLabel>Password</CustomLabel>
+      <Form.Item>
+        <Pass>
+        <Input.Password placeholder="Password">
+        </Input.Password>
+        </Pass>
+      </Form.Item>
+      {/* <EyeOutlined /> */}
 
     <Form.Item>
       <Divider>
