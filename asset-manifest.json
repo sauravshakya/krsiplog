@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/krsiplog/static/css/main.4e730b04.chunk.css",
-    "main.js": "/krsiplog/static/js/main.092386eb.chunk.js",
-    "main.js.map": "/krsiplog/static/js/main.092386eb.chunk.js.map",
-    "runtime-main.js": "/krsiplog/static/js/runtime-main.0dbb91fb.js",
-    "runtime-main.js.map": "/krsiplog/static/js/runtime-main.0dbb91fb.js.map",
+    "main.js": "/krsiplog/static/js/main.06da947e.chunk.js",
+    "main.js.map": "/krsiplog/static/js/main.06da947e.chunk.js.map",
+    "runtime-main.js": "/krsiplog/static/js/runtime-main.3922854f.js",
+    "runtime-main.js.map": "/krsiplog/static/js/runtime-main.3922854f.js.map",
     "static/css/2.786ae0dd.chunk.css": "/krsiplog/static/css/2.786ae0dd.chunk.css",
-    "static/js/2.1cac3036.chunk.js": "/krsiplog/static/js/2.1cac3036.chunk.js",
-    "static/js/2.1cac3036.chunk.js.map": "/krsiplog/static/js/2.1cac3036.chunk.js.map",
-    "static/js/3.e924b4d0.chunk.js": "/krsiplog/static/js/3.e924b4d0.chunk.js",
-    "static/js/3.e924b4d0.chunk.js.map": "/krsiplog/static/js/3.e924b4d0.chunk.js.map",
+    "static/js/2.cacbd448.chunk.js": "/krsiplog/static/js/2.cacbd448.chunk.js",
+    "static/js/2.cacbd448.chunk.js.map": "/krsiplog/static/js/2.cacbd448.chunk.js.map",
+    "static/js/3.af561e2b.chunk.js": "/krsiplog/static/js/3.af561e2b.chunk.js",
+    "static/js/3.af561e2b.chunk.js.map": "/krsiplog/static/js/3.af561e2b.chunk.js.map",
     "index.html": "/krsiplog/index.html",
     "static/css/2.786ae0dd.chunk.css.map": "/krsiplog/static/css/2.786ae0dd.chunk.css.map",
     "static/css/main.4e730b04.chunk.css.map": "/krsiplog/static/css/main.4e730b04.chunk.css.map",
-    "static/js/2.1cac3036.chunk.js.LICENSE.txt": "/krsiplog/static/js/2.1cac3036.chunk.js.LICENSE.txt",
+    "static/js/2.cacbd448.chunk.js.LICENSE.txt": "/krsiplog/static/js/2.cacbd448.chunk.js.LICENSE.txt",
     "static/media/Frame.abed0777.png": "/krsiplog/static/media/Frame.abed0777.png",
     "static/media/denmark.9140337b.svg": "/krsiplog/static/media/denmark.9140337b.svg",
     "static/media/france.80fb908b.svg": "/krsiplog/static/media/france.80fb908b.svg",
@@ -23,10 +23,10 @@
     "static/media/uk.6b1c7bc5.svg": "/krsiplog/static/media/uk.6b1c7bc5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0dbb91fb.js",
+    "static/js/runtime-main.3922854f.js",
     "static/css/2.786ae0dd.chunk.css",
-    "static/js/2.1cac3036.chunk.js",
+    "static/js/2.cacbd448.chunk.js",
     "static/css/main.4e730b04.chunk.css",
-    "static/js/main.092386eb.chunk.js"
+    "static/js/main.06da947e.chunk.js"
   ]
 }
