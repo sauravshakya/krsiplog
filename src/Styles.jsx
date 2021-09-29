@@ -11,7 +11,7 @@ export const Head = styled.div`
     }
 `;
 export const Title = styled.h2`   
-    margin-bottom: 60px;
+    margin-bottom: 59px;
     font-family: Manrope;
     color: rgb(37, 26, 67);
     font-style: normal;
@@ -26,7 +26,7 @@ export const Main = styled.div`
     margin-right: 148px;
 `;
 export const CustomLabel = styled.label`
-display: block;
+    display: block;
     width: 96px;
     height: 14px;
     color: rgb(86, 77, 109);
@@ -84,7 +84,7 @@ export const Pass = styled.div`
             font-weight: 400;
             border: 1px solid #F5F2F8;    
             color: rgb(61, 51, 88);
-            padding: 15px 20px;
+            padding: 15px 20px 15px 0px;
         }
         &:hover{
         border-color: rgb(215, 204, 228) !important;
@@ -237,14 +237,14 @@ export const Divider = styled.div`
     font-size: 14px;
 
     /* margin-top: 5px; */
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     
 `;
 
 export const Placement = styled.div`
     position: absolute;
     right: 160px;
-    top: 60px;
+    top: 66px;
     /* padding: 0.5rem; */
     height: 40px !important;
     line-height: 1.5715;
