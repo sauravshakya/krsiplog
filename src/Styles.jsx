@@ -21,9 +21,9 @@ export const Title = styled.h2`
     
 `;
 export const Main = styled.div`
-    margin-top: 223px;
+    margin-top: 220px;
     margin-left: 160px;
-    margin-right: 160px;
+    margin-right: 148px;
 `;
 export const CustomLabel = styled.label`
 display: block;
@@ -65,12 +65,15 @@ export const CustomInput = styled(Input)`
     
 `;
 export const Pass = styled.div`
+    .ant-input-affix-wrapper > input.ant-input{
+        background-color: #F5F2F8;
+    }
     .ant-input-password{
         background-color: #F5F2F8;
         border-radius: 10px;
         width: 100%;
         height: 48px;
-        padding: 0px 18px 0px 0px;
+        padding: 0px 20px 0px 20px;
         margin-bottom: 22px !important;
         .ant-input:focus, .ant-input-focused{
             border: none;
@@ -122,22 +125,22 @@ export const Wrapper = styled.div`
 `;
 export const Photofixer = styled.div`
     background-color: rgb(245, 242, 248);
-    flex: 60.521%;
+    /* flex: 60.521%; */
     width: 1162px;
-    height: 1080px;
+    height: 100vh;
     position: relative;
     flex: 85% 100%;
     
     .image{
         position: absolute;
-        left: -72px;
+        left: -7%;
         bottom: 0px;
-        width: 106%;
-        height: 63%;
+        width: 107%;
+        /* height: 63%; */
     } 
 `;
 export const WrapperOne = styled.div`
-    flex: 39.4793%;
+    /* flex: 39.4793%; */
 `;
 export const ButtonWrapper = styled.div`
     .ant-btn{
@@ -189,7 +192,7 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    margin-top: 219px;
+    margin-top: 206px;
     margin-left: 160px;
     a{
         font-size: 12px;
@@ -233,7 +236,7 @@ export const Divider = styled.div`
     font-weight: 700;
     font-size: 14px;
 
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-bottom: 24px;
     
 `;
@@ -242,7 +245,10 @@ export const Placement = styled.div`
     position: absolute;
     right: 160px;
     top: 60px;
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    height: 40px !important;
+    line-height: 1.5715;
+    min-width: 89px;
     .AppCountry{
         font-size: 10px;
         border: 1px solid #390179; 
@@ -253,6 +259,18 @@ export const Placement = styled.div`
     }
     img{
         margin-right: 10px;
+    }
+    .dropbox{
+        height: 40px !important;
+        line-height: 1.5715;
+    }
+    .ant-dropdown-link{
+        border: 2px solid #390179;
+        color: #390179;
+        padding: 10px 8px 10px 10px;
+        border-radius: 8px;
+        background: rgb(245, 242, 248) !important;
+        font-size: 16px;
     }
 `;
 

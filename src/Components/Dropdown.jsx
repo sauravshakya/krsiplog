@@ -2,6 +2,8 @@ import React, { FC, useState } from 'react';
 // import { useTranslation } from 'react-i18next'
 // import ReactDOM from 'react-dom';
 import { Menu, Dropdown, Select } from 'antd';
+import DownOutlined from '@ant-design/icons';
+// const {  DownOutlined  } = icons;
 import { LangStyle, LangOut } from './DropStyle.jsx'
 
 // import { useState, useMemo } from "react";
@@ -23,42 +25,46 @@ const { Option } = Select;
 
 
 function LanguageDropdown(){
-  // const menu = (
-  //   <Menu>
-  //     <Menu.Item onClick="selection" key="0">English</Menu.Item>
-  //     <Menu.Item onClick="selection" key="1">Espanol</Menu.Item>
-  //     <Menu.Item onClick="selection" key="2">Francais</Menu.Item>
-  //     <Menu.Item onClick="selection" key="3">Dansk</Menu.Item>
-  //     <Menu.Item onClick="selection" key="4">Deutsch</Menu.Item>
-  //   </Menu>
-  //   );
-    
-
-  //   return (
-  //       <Dropdown overlay={menu} trigger={['click']}>
-  //         <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
-  //           CLICK ME
-  //           {/* <Select></Select> */}
-  //           {/* <DownOutlined /> */}
-  //         </a>
-  //       </Dropdown>
-  //   );
-  const [value, setValue] = useState(0);
-  function handleChange(value) {
-    console.log(`selected ${value}`);
+  const selection = ({value}) => {
+    const [rock,setRock] = useState(menu.value);
   }
-
-  return(
+  const menu = (
     <LangOut>
-    <Select defaultValue="EN" className="AppCountry" onChange={ (value) => setValue(value) } dropdownStyle={{ borderRadius: '10px', color:'#390179', padding:'10px'}} style={{ width: 150 }} onChange={handleChange}>
-      <Option value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Option>
-      <Option value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Option>
-      <Option value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Option>
-      <Option value="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Option>
-      <Option value="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Option>
-    </Select>
+    <Menu>
+      <Menu.Item onClick="selection" key="0" value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Menu.Item>
+      <Menu.Item onClick="selection" key="1" value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Menu.Item>
+      <Menu.Item onClick="selection" key="2" value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Menu.Item>
+      <Menu.Item onClick="selection" key="3" value="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Menu.Item>
+      <Menu.Item onClick="selection" key="4" value="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Menu.Item>
+    </Menu>
     </LangOut>
-  );
+    );
+    
+    return (
+        <Dropdown overlay={menu} trigger={['click']}>
+          <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
+          <img src={ uk } alt="en" /> <p>{rock}</p>
+            {/* <Select></Select> */}
+            <DownOutlined />
+          </a>
+        </Dropdown>
+    );
+  // const [value, setValue] = useState(0);
+  // function handleChange(value) {
+  //   console.log(`selected ${value}`);
+  // }
+
+  // return(
+  //   <LangOut>
+  //   <Select defaultValue="EN" className="AppCountry" onChange={ (value) => setValue(value) } dropdownStyle={{ borderRadius: '10px', color:'#390179', padding:'10px'}} style={{ width: 150 }} onChange={handleChange}>
+  //     <Option value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Option>
+  //     <Option value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Option>
+  //     <Option value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Option>
+  //     <Option value="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Option>
+  //     <Option value="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Option>
+  //   </Select>
+  //   </LangOut>
+  // );
 
 // const friendOptions = [
 //   {

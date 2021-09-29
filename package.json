@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://sauravshakya.github.io/krsiplog",
   "dependencies": {
-    "@ant-design/icons": "^4.6.4",
+    "@ant-design/icons": "^4.7.0",
     "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",

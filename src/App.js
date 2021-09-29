@@ -67,7 +67,7 @@ function App() {
       <CustomLabel>Password</CustomLabel>
       <Form.Item>
         <Pass>
-        <Input.Password placeholder="Password">
+        <Input.Password placeholder="***********************">
         </Input.Password>
         </Pass>
       </Form.Item>
