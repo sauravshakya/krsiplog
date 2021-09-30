@@ -67,7 +67,7 @@ function App() {
       <CustomLabel>Password</CustomLabel>
       <Form.Item>
         <Pass>
-        <Input.Password placeholder="***********************">
+        <Input.Password placeholder="*******************">
         </Input.Password>
         </Pass>
       </Form.Item>
@@ -94,7 +94,7 @@ function App() {
       </ButtonWrapper>
       <Sizer>
         <p>Dont have an account?</p>
-        <a>Sign up?</a>
+        <a className="Sign">Sign up?</a>
       </Sizer> 
     </Form.Item>
   </Form>

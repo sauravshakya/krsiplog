@@ -21,6 +21,7 @@ code {
 }
 .login-form .ant-checkbox-wrapper{
   font-size: 14px;
+  font-weight: 600;
   color: rgb(86, 77, 109);
 }
 .login-form .ant-checkbox{
@@ -30,6 +31,7 @@ code {
 .login-form-forgot {
   float: right;
   font-size: 14px;
+  font-weight: 600;
   color:rgb(57, 1, 121)
 }
 .login-form-forgot:hover {

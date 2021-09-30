@@ -49,3 +49,10 @@ export const LangOut = styled.div`
     }
 
 `;
+export const Font = styled.span`
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(57, 1, 121);
+    display: inline-block;
+    font-family: Manrope;
+`; 

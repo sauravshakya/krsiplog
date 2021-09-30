@@ -40,6 +40,7 @@ export const CustomLabel = styled.label`
 
 `;
 export const CustomInput = styled(Input)`
+    margin-top: -1px;
     background-color: #F5F2F8;
     border-radius: 10px;
     border: 1px solid #F5F2F8;
@@ -48,8 +49,8 @@ export const CustomInput = styled(Input)`
     height: 48px;
     font-weight: 400;
     font-size: 1.125rem;
-    padding: 15px 20px;
-    margin-bottom: 46px !important;
+    padding: 15px 20px 15px 20px;
+    margin-bottom: 47px !important;
     /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
 
     &:hover{
@@ -69,22 +70,25 @@ export const Pass = styled.div`
         background-color: #F5F2F8;
     }
     .ant-input-password{
+        margin-top: 2px;
         background-color: #F5F2F8;
         border-radius: 10px;
         width: 100%;
         height: 48px;
         padding: 0px 20px 0px 20px;
-        margin-bottom: 22px !important;
+        margin-bottom: 20px !important;
         .ant-input:focus, .ant-input-focused{
             border: none;
         }
         .ant-input:placeholder-shown{
             background-color: #F5F2F8 !important;
-            font-size: 1.125rem;
+            /* font-size: 1.125rem; */
             font-weight: 400;
             border: 1px solid #F5F2F8;    
             color: rgb(61, 51, 88);
-            padding: 15px 20px 15px 0px;
+            padding: 14px 20px 16px 0px;
+            font-family: Manrope,sans-serif;
+            font-size: 20px;
         }
         &:hover{
         border-color: rgb(215, 204, 228) !important;
@@ -105,12 +109,12 @@ export const Sizer = styled.div`
     font-style: normal;
     font-weight: 700;
 
-    .a{
-        font-size: 12px;
+    .Sign{
+        font-size: 14px;
         color: rgb(26, 99, 244) !important; 
         cursor: pointer;
         font-weight: 700;
-        margin-top: 50px;
+        /* margin-top: 50px; */
     }
     p{
         color: #9E99AB;
@@ -118,6 +122,7 @@ export const Sizer = styled.div`
         font-style: normal;
         font-weight: bold;
         font-size: 14px;
+        margin-bottom: 3px;
     }
 `;
 export const Wrapper = styled.div`
@@ -148,6 +153,7 @@ export const ButtonWrapper = styled.div`
         border-color: #390179;
         width: 450px;
         height: 48px;
+        margin-top: -2px;
         margin-bottom: 24px;
         border-radius: 10px;
 
@@ -173,10 +179,14 @@ export const WrapperCheck = styled.div`
     /* .ant-checkbox-checked .ant-checkbox-inner:hover{
         border: #390179;
     } */
-
+    .ant-checkbox-inner {
+        height:19px;
+        width: 19px;
+    }
     .ant-checkbox-checked .ant-checkbox-inner {
         background-color: #390179;
         border-color: #390179;
+        font-size: 20px;
     }   
     .ant-checkbox-wrapper:hover .ant-checkbox-inner,
     .ant-checkbox:hover .ant-checkbox-inner,
@@ -192,7 +202,7 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    margin-top: 206px;
+    margin-top: 204px;
     margin-left: 160px;
     a{
         font-size: 12px;
@@ -258,7 +268,9 @@ export const Placement = styled.div`
         }
     }
     img{
-        margin-right: 10px;
+        margin-right: 5px;
+        width: 20px;
+        height: 20px;
     }
     .dropbox{
         height: 40px !important;
@@ -267,7 +279,7 @@ export const Placement = styled.div`
     .ant-dropdown-link{
         border: 2px solid #390179;
         color: #390179;
-        padding: 10px 8px 10px 10px;
+        padding: 8px 8px 10px 10px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;

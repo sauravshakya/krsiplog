@@ -5,7 +5,7 @@ import { Menu, Dropdown, Select } from 'antd';
 import 'antd/dist/antd.css';
 import { DownOutlined } from '@ant-design/icons';
 // const {  DownOutlined  } = icons;
-import { LangStyle, LangOut } from './DropStyle.jsx'
+import { LangStyle, LangOut, Font } from './DropStyle.jsx'
 
 // import { useState, useMemo } from "react";
 // import Select from 'react-select'
@@ -26,9 +26,10 @@ const { Option } = Select;
 
 
 function LanguageDropdown(){
-  // const selection = ({value}) => {
-  //   const [rock,setRock] = useState(menu.value);
-  // }
+  const [rock,setRock] = useState();
+  const selection = ({value}) => {
+    setRock(value)
+  }
   const menu = (
     <LangOut>
     <Menu>
@@ -40,12 +41,12 @@ function LanguageDropdown(){
     </Menu>
     </LangOut>
     );
-    const downArrow = { fontSize: '10px' , marginLeft: '6px'}
+    const downArrow = { fontSize: '10px' , marginLeft: '2px'}
     
     return (
         <Dropdown overlay={menu} trigger={['click']}>
           <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
-          <img src={ uk } alt="en" /> EN
+          <img src={ uk } alt="en" /> <Font>EN</Font> {rock}
             {/* <Select></Select> */}
             <DownOutlined style = { downArrow } />
           </a>
