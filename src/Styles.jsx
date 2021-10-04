@@ -11,7 +11,7 @@ export const Head = styled.div`
     }
 `;
 export const Title = styled.h2`   
-    margin-bottom: 59px;
+    margin-bottom: 60px;
     font-family: Manrope;
     color: rgb(37, 26, 67);
     font-style: normal;
@@ -21,7 +21,7 @@ export const Title = styled.h2`
     
 `;
 export const Main = styled.div`
-    margin-top: 220px;
+    margin-top: 218px;
     margin-left: 160px;
     margin-right: 148px;
 `;
@@ -39,20 +39,25 @@ export const CustomLabel = styled.label`
     margin-bottom: 6px;
 
 `;
-export const CustomInput = styled(Input)`
-    margin-top: -1px;
-    background-color: #F5F2F8;
-    border-radius: 10px;
-    border: 1px solid #F5F2F8;
-    color: rgb(61, 51, 88);
-    width: 450px;
-    height: 48px;
-    font-weight: 400;
-    font-size: 1.125rem;
-    padding: 15px 20px 15px 20px;
-    margin-bottom: 47px !important;
-    /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
-
+export const CustomInput = styled.div`
+    Input{
+        margin-top: -1px;
+        background-color: #F5F2F8;
+        border-radius: 10px;
+        border: 1px solid #F5F2F8;
+        color: rgba(0,0,0,.85);
+        width: 450px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 1.125rem;
+        padding: 15px 20px 15px 20px;
+        margin-bottom: 47px !important;
+        /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
+        border-color: rgb(215, 204, 228) !important;
+        outline: 0;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }    
     &:hover{
         border-color: rgb(215, 204, 228);
     }
@@ -63,21 +68,28 @@ export const CustomInput = styled(Input)`
     &::placeholder{
         color: #aaa5b6;
     }
-    
 `;
 export const Pass = styled.div`
+    /* padding: 0px 20px 0px 20px; */
+    margin-bottom: 20px !important;
+    .ant-input-affix-wrapper.ant-input-password{
+        border-color: #f000 !important;
+        outline: 0;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
     .ant-input-affix-wrapper > input.ant-input{
         background-color: #F5F2F8;
+        padding: 14px 20px 16px 9px;
     }
     .ant-input-password{
         margin-top: 2px;
+        color:rgba(0,0,0,.85);
         background-color: #F5F2F8;
         border-radius: 10px;
         width: 100%;
         height: 48px;
-        padding: 0px 20px 0px 20px;
-        margin-bottom: 20px !important;
-        .ant-input:focus, .ant-input-focused{
+        .ant-input:active, .ant-input:focus, .ant-input-focused{
             border: none;
         }
         .ant-input:placeholder-shown{
@@ -85,23 +97,42 @@ export const Pass = styled.div`
             /* font-size: 1.125rem; */
             font-weight: 400;
             border: 1px solid #F5F2F8;    
-            color: rgb(61, 51, 88);
-            padding: 14px 20px 16px 0px;
+            /* color: rgb(246, 9, 9); */
+            /* opacity: 1; */
+            padding: 14px 20px 16px 9px;
             font-family: Manrope,sans-serif;
             font-size: 20px;
         }
         &:hover{
         border-color: rgb(215, 204, 228) !important;
         }
-        &:focus{
+        .ant-input-suffix{
+            margin-right: 7px;
+        }
+        /* &:focus{
             border-color: rgb(215, 204, 228) !important;
             box-shadow: none;
             border-color: rgb(215, 204, 228) !important;
-
-        }
-        &::placeholder{
-            color: #aaa5b6;
-        }
+        } */
+        /* &::placeholder{
+            color: #ff0c0c;
+        } */
+        /* .ant-input-affix-wrapper-active, .ant-input-affix-wrapper-focus, .ant-input-affix-wrapper-focused {
+            box-shadow: none !important;
+            border-color: none !important; 
+            outline: none !important;
+            -webkit-box-shadow:none !important;
+        } */
+        /* .ant-input-focus, .ant-input-focused{
+            box-shadow: none !important;
+            outline: none;
+        } */
+        /* .ant-input-password *:focus {
+            border-color: #ff0000;
+            outline: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        } */
     }
 `;
 export const Sizer = styled.div`
@@ -202,12 +233,13 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    margin-top: 204px;
+    margin-top: 205px;
     margin-left: 160px;
     a{
         font-size: 12px;
         font-family: Manrope,sans-serif;
         font-style: normal;
+        color: rgb(26, 99, 244);
         font-weight: 700;
         margin-right: 60px;
         &:hover{
@@ -268,7 +300,8 @@ export const Placement = styled.div`
         }
     }
     img{
-        margin-right: 5px;
+        margin-right: 7px;
+        margin-left: 2px;
         width: 20px;
         height: 20px;
     }
@@ -279,7 +312,7 @@ export const Placement = styled.div`
     .ant-dropdown-link{
         border: 2px solid #390179;
         color: #390179;
-        padding: 8px 8px 10px 10px;
+        padding: 7px 10px 10px 9px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;

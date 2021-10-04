@@ -28,25 +28,27 @@ const { Option } = Select;
 function LanguageDropdown(){
   const [rock,setRock] = useState();
   const selection = ({value}) => {
-    setRock(value)
+    console.log(value);
+    // setRock(event.target.value)
   }
   const menu = (
     <LangOut>
-    <Menu>
-      <Menu.Item onClick="selection" key="0" value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Menu.Item>
-      <Menu.Item onClick="selection" key="1" value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Menu.Item>
-      <Menu.Item onClick="selection" key="2" value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Menu.Item>
-      <Menu.Item onClick="selection" key="3" value="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Menu.Item>
-      <Menu.Item onClick="selection" key="4" value="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Menu.Item>
+    <Menu onClick={ selection }>
+      <Menu.Item key="0" value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Menu.Item>
+      <Menu.Item key="1" value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Menu.Item>
+      <Menu.Item key="2" value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Menu.Item>
+      <Menu.Item key="3" value="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Menu.Item>
+      <Menu.Item key="4" value="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Menu.Item>
     </Menu>
     </LangOut>
     );
-    const downArrow = { fontSize: '10px' , marginLeft: '2px'}
+    const downArrow = { fontSize: '12px' , marginLeft: '2px', marginTop: '4px'}
     
     return (
         <Dropdown overlay={menu} trigger={['click']}>
           <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
-          <img src={ uk } alt="en" /> <Font>EN</Font> {rock}
+          <img src={ uk } alt="en" /> 
+            <Font>EN</Font>{rock} 
             {/* <Select></Select> */}
             <DownOutlined style = { downArrow } />
           </a>

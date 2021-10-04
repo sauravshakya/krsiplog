@@ -3,17 +3,19 @@ import PhotoDesign from './Components/Photo'
 import LanguageDropdown from './Components/Dropdown'
 import 'antd/dist/antd.css';
 import './index.css';
-import { Form, Button, Checkbox,Input } from 'antd';
+import { Form, Button, Checkbox, Input } from 'antd';
 // import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { EyeTwoTone , EyeInvisibleOutlined } from '@ant-design/icons';
 import { Head, Title, Main, CustomInput, Sizer, Photofixer, Wrapper, WrapperOne ,ButtonWrapper, WrapperCheck, Official, Divider, Placement, CustomLabel, Pass} from "./Styles";
 import {  } from 'react-icons/fa';
 import krisplogo from './asset/krispcall-logo.svg';
+import { RiEyeCloseLine , RiEyeLine } from "react-icons/ri";
 
 function App() {
   const onFinish = (values) => {
     console.log('Received values of form: ', values);
   };
+  // const iconStyle = { height: '18px', width: '18px' };
   let visible;
   return (
     <>
@@ -45,7 +47,10 @@ function App() {
       // ]}
     >
       <CustomLabel>Email Address</CustomLabel> 
-      <CustomInput placeholder="donjohn@krispcall.com" />
+      {/* <CustomInput placeholder="donjohn@krispcall.com" /> */}
+      <CustomInput>
+        <Input placeholder="donjohn@krispcall.com" />
+      </CustomInput>
     </div>
     <div
       // name="password"
@@ -67,13 +72,17 @@ function App() {
       <CustomLabel>Password</CustomLabel>
       <Form.Item>
         <Pass>
-        <Input.Password placeholder="*******************">
+        <Input.Password 
+        placeholder="*******************"
+        // placeholderTextColor= "red"
+        iconRender={visible => (visible ? <RiEyeLine size='18px' /> : <RiEyeCloseLine size='18px' />
+        )}>
         </Input.Password>
         </Pass>
       </Form.Item>
       {/* <EyeOutlined /> */}
 
-    <Form.Item>
+    <Form.Item> 
       <Divider>
       <Form.Item name="remember" valuePropName="checked" noStyle>
         <WrapperCheck>
