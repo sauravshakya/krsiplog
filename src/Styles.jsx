@@ -44,7 +44,7 @@ export const CustomInput = styled.div`
         margin-top: -1px;
         background-color: #F5F2F8;
         border-radius: 10px;
-        border: 1px solid #F5F2F8;
+        border: none;
         color: rgba(0,0,0,.85);
         width: 450px;
         height: 48px;
@@ -148,11 +148,11 @@ export const Sizer = styled.div`
         /* margin-top: 50px; */
     }
     p{
-        color: #9E99AB;
-        font-family: Manrope;
+        color: rgb(158, 153, 171);
+        font-family: Manrope, sans-serif;
         font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
+        font-weight: 700;
+        font-size: 14.5px;
         margin-bottom: 3px;
     }
 `;
@@ -312,7 +312,7 @@ export const Placement = styled.div`
     .ant-dropdown-link{
         border: 2px solid #390179;
         color: #390179;
-        padding: 7px 10px 10px 9px;
+        padding: 8px 10px 10px 9px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;

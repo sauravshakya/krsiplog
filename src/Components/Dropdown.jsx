@@ -26,14 +26,17 @@ const { Option } = Select;
 
 
 function LanguageDropdown(){
-  const [rock,setRock] = useState();
+  
+  const [value,setValue] = useState(null);
+
   const selection = ({value}) => {
-    console.log(value);
-    // setRock(event.target.value)
+    console.log({value});
+    // setRock(menu.value)
   }
+  
   const menu = (
     <LangOut>
-    <Menu onClick={ selection }>
+    <Menu defaultValue="EN" onChange={ (value) => setValue(value) } onClick={ selection } >
       <Menu.Item key="0" value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Menu.Item>
       <Menu.Item key="1" value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Menu.Item>
       <Menu.Item key="2" value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Menu.Item>
@@ -47,8 +50,8 @@ function LanguageDropdown(){
     return (
         <Dropdown overlay={menu} trigger={['click']}>
           <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
-          <img src={ uk } alt="en" /> 
-            <Font>EN</Font>{rock} 
+          <img src={ uk } alt="en" />
+            <Font>EN{value}</Font> 
             {/* <Select></Select> */}
             <DownOutlined style = { downArrow } />
           </a>

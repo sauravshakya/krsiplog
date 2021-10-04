@@ -41,16 +41,19 @@ export const LangOut = styled.div`
         background-color: rgb(243, 242, 244);
         border-radius: 6px;
     }
+    .ant-menu-item-selected {
+        background-color: rgb(243, 242, 244);
+    }
     .ant-select-selector{
         border:1px solid #390179 !important;
     }
     .ant-select-selector:hover{
         border:1px solid #390179;
     }
-
 `;
 export const Font = styled.span`
     text-transform: uppercase;
+    margin-right: 2px;
     font-weight: 600;
     color: rgb(57, 1, 121);
     display: inline-block;
