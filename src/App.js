@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React, { Component , useState}  from 'react';
 import PhotoDesign from './Components/Photo'
 import LanguageDropdown from './Components/Dropdown'
 import 'antd/dist/antd.css';
@@ -12,11 +12,21 @@ import krisplogo from './asset/krispcall-logo.svg';
 import { RiEyeCloseLine , RiEyeLine } from "react-icons/ri";
 
 function App() {
-  const onFinish = (values) => {
-    console.log('Received values of form: ', values);
-  };
+  // const onFinish = (values) => {
+  //   console.log('Received values of form: ', values);
+  // };
   // const iconStyle = { height: '18px', width: '18px' };
   let visible;
+
+  // const [details,setDetails] = useState({ email: "", password: ""});
+  const [email,setEmail] = useState("");
+  const [password,setPassword] = useState("");
+
+  const submitHandler = (e) =>{
+    e.preventDefault();
+    console.log({email} ,{password});
+    // console.log([details]);
+  } 
   return (
     <>
     <Wrapper>
@@ -34,7 +44,6 @@ function App() {
     initialValues={{
       remember: true,
     }}
-    onFinish={onFinish}
     >
     <div
       // name="username"
@@ -49,7 +58,9 @@ function App() {
       <CustomLabel>Email Address</CustomLabel> 
       {/* <CustomInput placeholder="donjohn@krispcall.com" /> */}
       <CustomInput>
-        <Input placeholder="donjohn@krispcall.com" />
+        <Input placeholder="donjohn@krispcall.com" 
+        onChange={ (e) => setEmail(e.target.value) } 
+        value={email} />
       </CustomInput>
     </div>
     <div
@@ -73,8 +84,9 @@ function App() {
       <Form.Item>
         <Pass>
         <Input.Password 
-        placeholder="*******************"
-        // placeholderTextColor= "red"
+        placeholder="*********************"
+        onChange={ (e) => setPassword( e.target.value ) }
+        value={password}
         iconRender={visible => (visible ? <RiEyeLine size='18px' /> : <RiEyeCloseLine size='18px' />
         )}>
         </Input.Password>
@@ -97,12 +109,12 @@ function App() {
 
     <Form.Item>
       <ButtonWrapper>
-        <Button type="primary" htmlType="submit" className="login-form-button">
+        <Button type="primary" onClick={submitHandler} htmlType="submit" className="login-form-button">
           Log in
         </Button>
       </ButtonWrapper>
       <Sizer>
-        <p>Dont have an account?</p>
+        <p>Don't have an account?</p>
         <a className="Sign">Sign up?</a>
       </Sizer> 
     </Form.Item>

@@ -27,31 +27,35 @@ const { Option } = Select;
 
 function LanguageDropdown(){
   
-  const [value,setValue] = useState(null);
+  const [value,setValue] = useState("EN");
 
-  const selection = ({value}) => {
-    console.log({value});
-    // setRock(menu.value)
-  }
-  
+  // const selection = ({value}) => {
+  //   console.log(value);
+  //   (value) => setValue(value);
+  //   // setRock(menu.value)
+  // }
+  const handleClick = (e) => {
+    console.log('click ', e.key);
+    setValue(e.key);
+  };
   const menu = (
     <LangOut>
-    <Menu defaultValue="EN" onChange={ (value) => setValue(value) } onClick={ selection } >
-      <Menu.Item key="0" value="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Menu.Item>
-      <Menu.Item key="1" value="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Menu.Item>
-      <Menu.Item key="2" value="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Menu.Item>
-      <Menu.Item key="3" value="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Menu.Item>
-      <Menu.Item key="4" value="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Menu.Item>
+    <Menu className="Language" defaultSelectedKeys={[value]} onClick={ handleClick } >
+      <Menu.Item key="EN"><img src={ uk } alt="en" /><LangStyle>English</LangStyle></Menu.Item>
+      <Menu.Item key="ES"><img src={ spain } alt="es" /><LangStyle>Espanol</LangStyle></Menu.Item>
+      <Menu.Item key="FR"><img src={ france } alt="fr" /><LangStyle>Francais</LangStyle></Menu.Item>
+      <Menu.Item key="DA"><img src={ denmark } alt="da" /><LangStyle>Dansk</LangStyle></Menu.Item>
+      <Menu.Item key="DE"><img src={ germany } alt="de" /><LangStyle>Deutsch</LangStyle></Menu.Item>
     </Menu>
     </LangOut>
     );
-    const downArrow = { fontSize: '12px' , marginLeft: '2px', marginTop: '4px'}
+    const downArrow = { height: '16px' , width: '16px' , marginTop: '2px'}
     
     return (
         <Dropdown overlay={menu} trigger={['click']}>
           <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
           <img src={ uk } alt="en" />
-            <Font>EN{value}</Font> 
+            <Font>{value}</Font> 
             {/* <Select></Select> */}
             <DownOutlined style = { downArrow } />
           </a>

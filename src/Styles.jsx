@@ -40,7 +40,7 @@ export const CustomLabel = styled.label`
 
 `;
 export const CustomInput = styled.div`
-    Input{
+    .ant-input{
         margin-top: -1px;
         background-color: #F5F2F8;
         border-radius: 10px;
@@ -49,7 +49,8 @@ export const CustomInput = styled.div`
         width: 450px;
         height: 48px;
         font-weight: 400;
-        font-size: 1.125rem;
+        font-family: Manrope,sans-serif;
+        font-size: 17px;
         padding: 15px 20px 15px 20px;
         margin-bottom: 47px !important;
         /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
@@ -57,7 +58,7 @@ export const CustomInput = styled.div`
         outline: 0;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
-    }    
+        
     &:hover{
         border-color: rgb(215, 204, 228);
     }
@@ -66,8 +67,12 @@ export const CustomInput = styled.div`
         box-shadow: none;
     }
     &::placeholder{
-        color: #aaa5b6;
+        color: #100022;
+        font-weight: 400;
+        opacity: 0.5;
+        font-family: Manrope,sans-serif;
     }
+}
 `;
 export const Pass = styled.div`
     /* padding: 0px 20px 0px 20px; */
@@ -92,16 +97,20 @@ export const Pass = styled.div`
         .ant-input:active, .ant-input:focus, .ant-input-focused{
             border: none;
         }
-        .ant-input:placeholder-shown{
+        .ant-input{
             background-color: #F5F2F8 !important;
             /* font-size: 1.125rem; */
             font-weight: 400;
             border: 1px solid #F5F2F8;    
-            /* color: rgb(246, 9, 9); */
             /* opacity: 1; */
             padding: 14px 20px 16px 9px;
             font-family: Manrope,sans-serif;
-            font-size: 20px;
+            font-size: 17px;
+            &::placeholder{
+                font-weight: 400;
+                color: #100022;
+                opacity: 0.5;
+            }
         }
         &:hover{
         border-color: rgb(215, 204, 228) !important;
@@ -152,7 +161,7 @@ export const Sizer = styled.div`
         font-family: Manrope, sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 14.5px;
+        font-size: 14px;
         margin-bottom: 3px;
     }
 `;
@@ -300,8 +309,8 @@ export const Placement = styled.div`
         }
     }
     img{
-        margin-right: 7px;
-        margin-left: 2px;
+        margin-right: 9px;
+        /* margin-left: 2px; */
         width: 20px;
         height: 20px;
     }
@@ -312,7 +321,7 @@ export const Placement = styled.div`
     .ant-dropdown-link{
         border: 2px solid #390179;
         color: #390179;
-        padding: 8px 10px 10px 9px;
+        padding: 8px 8px 11px 9px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;
