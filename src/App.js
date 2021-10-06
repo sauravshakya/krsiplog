@@ -21,10 +21,11 @@ function App() {
   // const [details,setDetails] = useState({ email: "", password: ""});
   const [email,setEmail] = useState("");
   const [password,setPassword] = useState("");
+  const [checkbox,setCheckbox] = useState("");
 
   const submitHandler = (e) =>{
     e.preventDefault();
-    console.log({email} ,{password});
+    console.log([ {email}, {password}, {checkbox} ]);
     // console.log([details]);
   } 
   return (
@@ -98,7 +99,7 @@ function App() {
       <Divider>
       <Form.Item name="remember" valuePropName="checked" noStyle>
         <WrapperCheck>
-          <Checkbox >Keep me logged in</Checkbox>
+          <Checkbox onChange={ (e) => setCheckbox(e.target.checked) }>Keep me logged in</Checkbox>
         </WrapperCheck>
       </Form.Item>
       <a className="login-form-forgot" href="">

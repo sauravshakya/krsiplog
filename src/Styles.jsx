@@ -68,7 +68,8 @@ export const CustomInput = styled.div`
     }
     &::placeholder{
         color: #100022;
-        font-weight: 400;
+        font-weight: 300;
+        justify-content: center;
         opacity: 0.5;
         font-family: Manrope,sans-serif;
     }
@@ -107,6 +108,8 @@ export const Pass = styled.div`
             font-family: Manrope,sans-serif;
             font-size: 17px;
             &::placeholder{
+                margin-top:5px;
+                justify-content: center;
                 font-weight: 400;
                 color: #100022;
                 opacity: 0.5;
