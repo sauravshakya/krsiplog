@@ -42,7 +42,7 @@ export const LangOut = styled.div`
         border-radius: 6px;
     }
     .ant-menu-item-selected {
-        background-color: rgb(243, 242, 244);
+        background-color: rgb(243, 242, 244) !important;
     }
     .ant-select-selector{
         border:1px solid #390179 !important;
