@@ -49,7 +49,7 @@ function LanguageDropdown(){
     </Menu>
     </LangOut>
     );
-    const downArrow = { height: '16px' , width: '16px' , marginTop: '2px'}
+    const downArrow = { height: '16px' , width: '16px' , marginTop: '6px', color: '#390179'}
     
     return (
         <Dropdown overlay={menu} trigger={['click']}>

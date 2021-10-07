@@ -17,17 +17,18 @@ export const LangOut = styled.div`
     background:none !important;
     .ant-menu{
         margin-top: 10px;
-        margin-left: -68px;
+        margin-left: -64px;
         border-radius:15px;
-        padding: 16px;
+        padding: 16px 16px 14px 17px;
         width: 154px;
         box-shadow: rgb(0 0 0 / 15%) 0px 15px 99px;
-    }
+    }   
     .ant-menu-item{
         margin:0;
         padding: 0 12px;
         height: 31px;
         line-height: 31px;
+        font-weight: 600 ;
         img{
             font-size: 0.625rem;
             height: 16px;
@@ -35,7 +36,7 @@ export const LangOut = styled.div`
         }
     }
     .ant-menu-item:not(:last-child){
-        margin-bottom: 0px;
+        margin-bottom: 1px;
     }
     .ant-menu-item-active{
         background-color: rgb(243, 242, 244);
@@ -43,6 +44,7 @@ export const LangOut = styled.div`
     }
     .ant-menu-item-selected {
         background-color: rgb(243, 242, 244) !important;
+        font-weight: bold;
     }
     .ant-select-selector{
         border:1px solid #390179 !important;

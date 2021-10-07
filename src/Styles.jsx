@@ -49,8 +49,8 @@ export const CustomInput = styled.div`
         width: 450px;
         height: 48px;
         font-weight: 400;
-        font-family: Manrope,sans-serif;
-        font-size: 17px;
+        font-family: 'Heebo', sans-serif;
+        font-size: 1.125rem;
         padding: 15px 20px 15px 20px;
         margin-bottom: 47px !important;
         /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
@@ -68,10 +68,10 @@ export const CustomInput = styled.div`
     }
     &::placeholder{
         color: #100022;
-        font-weight: 300;
+        font-weight: 400;
         justify-content: center;
         opacity: 0.5;
-        font-family: Manrope,sans-serif;
+        font-family: 'Heebo', sans-serif;;
     }
 }
 `;
@@ -105,9 +105,10 @@ export const Pass = styled.div`
             border: 1px solid #F5F2F8;    
             /* opacity: 1; */
             padding: 14px 20px 16px 9px;
-            font-family: Manrope,sans-serif;
-            font-size: 17px;
+            font-family: 'Heebo', sans-serif;
+            font-size: 1.125rem;
             &::placeholder{
+                font-family: 'Heebo', sans-serif;
                 margin-top:5px;
                 justify-content: center;
                 font-weight: 400;
