@@ -19,24 +19,30 @@ export const LangOut = styled.div`
         margin-top: 10px;
         margin-left: -64px;
         border-radius:15px;
-        padding: 16px 16px 14px 17px;
+        padding: 16px 16px 14px 19px;
         width: 154px;
         box-shadow: rgb(0 0 0 / 15%) 0px 15px 99px;
     }   
     .ant-menu-item{
         margin:0;
-        padding: 0 12px;
+        padding: 0 14px 0 8px;
         height: 31px;
         line-height: 31px;
         font-weight: 600 ;
+        justify-content: center;
         img{
             font-size: 0.625rem;
             height: 16px;
             width: 16px;
+            margin-bottom: 5px;
         }
     }
+    /* .ant-menu-item:(2nd-child){
+        padding-bottom: 2px;
+    } */
     .ant-menu-item:not(:last-child){
-        margin-bottom: 1px;
+        /* margin-top:-2px; */
+        margin-bottom: 1px !important;
     }
     .ant-menu-item-active{
         background-color: rgb(243, 242, 244);

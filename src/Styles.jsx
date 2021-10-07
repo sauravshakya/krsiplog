@@ -78,6 +78,9 @@ export const CustomInput = styled.div`
 export const Pass = styled.div`
     /* padding: 0px 20px 0px 20px; */
     margin-bottom: 20px !important;
+    .ant-input-affix-wrapper{
+        padding: 0;
+    }
     .ant-input-affix-wrapper.ant-input-password{
         border-color: #f000 !important;
         outline: 0;
@@ -86,7 +89,8 @@ export const Pass = styled.div`
     }
     .ant-input-affix-wrapper > input.ant-input{
         background-color: #F5F2F8;
-        padding: 14px 20px 16px 9px;
+        /* padding: 14px 20px 16px 9px; */
+        padding: 15px 20px;
     }
     .ant-input-password{
         margin-top: 2px;
@@ -109,8 +113,8 @@ export const Pass = styled.div`
             font-size: 1.125rem;
             &::placeholder{
                 font-family: 'Heebo', sans-serif;
-                margin-top:5px;
-                justify-content: center;
+                /* margin-top:5px; */
+                /* justify-content: center; */
                 font-weight: 400;
                 color: #100022;
                 opacity: 0.5;
@@ -120,7 +124,7 @@ export const Pass = styled.div`
         border-color: rgb(215, 204, 228) !important;
         }
         .ant-input-suffix{
-            margin-right: 7px;
+            margin-right: 18px;
         }
         /* &:focus{
             border-color: rgb(215, 204, 228) !important;
@@ -304,14 +308,14 @@ export const Placement = styled.div`
     height: 40px !important;
     line-height: 1.5715;
     min-width: 89px;
-    .AppCountry{
+    /* .AppCountry{
         font-size: 10px;
         border: 1px solid #390179; 
         border-radius: 4px;
         &:focus{
             border:none;
         }
-    }
+    } */
     img{
         margin-right: 9px;
         /* margin-left: 2px; */
@@ -329,6 +333,8 @@ export const Placement = styled.div`
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;
+        width: 100%;
+        height: 100%;
     }
 `;
 
