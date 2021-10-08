@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LangStyle = styled.div`
+export const LangStyle = styled.span`
     display: inline-block;
     margin-left:6px;
     color: rgb(158, 153, 171);
@@ -47,10 +47,14 @@ export const LangOut = styled.div`
     .ant-menu-item-active{
         background-color: rgb(243, 242, 244);
         border-radius: 6px;
+        font-weight: 600;
     }
     .ant-menu-item-selected {
         background-color: rgb(243, 242, 244) !important;
-        font-weight: bold;
+        border-radius: 6px;
+        span{
+            font-weight: bolder;
+        }
     }
     .ant-select-selector{
         border:1px solid #390179 !important;
