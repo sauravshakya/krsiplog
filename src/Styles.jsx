@@ -329,7 +329,7 @@ export const Placement = styled.div`
     .ant-dropdown-link{
         border: 2px solid #390179;
         color: #390179;
-        padding: 8px 8px 11px 9px;
+        padding: 7px 8px 10px 9px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;
