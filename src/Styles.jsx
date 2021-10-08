@@ -321,8 +321,6 @@ export const Placement = styled.div`
         /* margin-left: 2px; */
         width: 20px;
         height: 20px;
-        justify-content: center;
-
     }
     .dropbox{
         height: 40px !important;
@@ -331,12 +329,13 @@ export const Placement = styled.div`
     .ant-dropdown-link{
         border: 2px solid #390179;
         color: #390179;
-        padding: 8px 8px 11px 10px;
+        padding: 8px 8px 11px 9px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;
         width: 100%;
         height: 100%;
+        justify-content: center;
     }
 `;
 
