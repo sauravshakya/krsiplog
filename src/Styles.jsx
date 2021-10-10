@@ -303,11 +303,11 @@ export const Divider = styled.div`
 export const Placement = styled.div`
     position: absolute;
     right: 160px;
-    top: 66px;
+    top: 60px;
     /* padding: 0.5rem; */
     height: 40px !important;
     line-height: 1.5715;
-    min-width: 89px;
+    max-width: 89px;
     /* .AppCountry{
         font-size: 10px;
         border: 1px solid #390179; 
@@ -317,7 +317,7 @@ export const Placement = styled.div`
         }
     } */
     img{
-        margin-right: 9px;
+        margin-right: 8px;
         /* margin-left: 2px; */
         width: 20px;
         height: 20px;
@@ -327,9 +327,10 @@ export const Placement = styled.div`
         line-height: 1.5715;
     }
     .ant-dropdown-link{
+        display: block;
         border: 2px solid #390179;
         color: #390179;
-        padding: 7px 8px 10px 9px;
+        padding: 4px 8px 0px 10px;
         border-radius: 8px;
         background: rgb(245, 242, 248) !important;
         font-size: 16px;
