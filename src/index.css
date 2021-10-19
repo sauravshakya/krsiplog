@@ -28,16 +28,6 @@ code {
   font-size: 1.6rem;
 }
 
-.login-form-forgot {
-  float: right;
-  font-size: 14px;
-  font-weight: 600;
-  color:rgb(57, 1, 121)
-}
-.login-form-forgot:hover {
-  color:rgb(57, 1, 121);
-}
-
 .ant-col-rtl .login-form-forgot {
   float: left;
 }

@@ -50,11 +50,12 @@ export const LangOut = styled.div`
         border-radius: 6px;
         font-weight: 600;
     }
-    .ant-menu-item-selected {
+    .ant-menu-item.ant-menu-item-selected {
         background-color: rgb(243, 242, 244) !important;
         border-radius: 6px;
+        /* font-weight: 600; */
         span{
-            font-weight: bolder;
+            font-weight: bolder !important;
         }
     }
     .ant-select-selector{

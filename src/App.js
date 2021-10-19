@@ -102,9 +102,11 @@ function App() {
           <Checkbox onChange={ (e) => setCheckbox(e.target.checked) }>Keep me logged in</Checkbox>
         </WrapperCheck>
       </Form.Item>
+      <div>
       <a className="login-form-forgot" href="">
         Forgot Password?
       </a>
+      </div>
       </Divider>
     </Form.Item>
 

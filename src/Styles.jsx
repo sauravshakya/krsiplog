@@ -10,18 +10,18 @@ export const Head = styled.div`
         height: 36px;
     }
 `;
-export const Title = styled.h2`   
+export const Title = styled.h5`   
     margin-bottom: 60px;
     font-family: Manrope;
     color: rgb(37, 26, 67);
     font-style: normal;
-    font-weight: 700;
+    font-weight: bold;
     font-size: 32px;
     line-height: 32px;
     
 `;
 export const Main = styled.div`
-    margin-top: 218px;
+    margin-top: 217px;
     margin-left: 160px;
     margin-right: 148px;
 `;
@@ -30,7 +30,7 @@ export const CustomLabel = styled.label`
     width: 96px;
     height: 14px;
     color: rgb(86, 77, 109);
-    padding-bottom: 6px;
+    /* padding-bottom: 6px; */
     font-family: Manrope,sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -41,7 +41,7 @@ export const CustomLabel = styled.label`
 `;
 export const CustomInput = styled.div`
     .ant-input{
-        margin-top: -1px;
+        /* margin-top: -1px; */
         background-color: #F5F2F8;
         border-radius: 10px;
         border: none;
@@ -52,7 +52,7 @@ export const CustomInput = styled.div`
         font-family: 'Heebo', sans-serif;
         font-size: 1.125rem;
         padding: 15px 20px 15px 20px;
-        margin-bottom: 47px !important;
+        margin-bottom: 48px !important;
         /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
         border-color: rgb(215, 204, 228) !important;
         outline: 0;
@@ -77,7 +77,7 @@ export const CustomInput = styled.div`
 `;
 export const Pass = styled.div`
     /* padding: 0px 20px 0px 20px; */
-    margin-bottom: 20px !important;
+    margin-bottom: 24px !important;
     .ant-input-affix-wrapper{
         padding: 0;
     }
@@ -93,7 +93,7 @@ export const Pass = styled.div`
         padding: 15px 20px;
     }
     .ant-input-password{
-        margin-top: 2px;
+        /* margin-top: 2px; */
         color:rgba(0,0,0,.85);
         background-color: #F5F2F8;
         border-radius: 10px;
@@ -108,7 +108,7 @@ export const Pass = styled.div`
             font-weight: 400;
             border: 1px solid #F5F2F8;    
             /* opacity: 1; */
-            padding: 14px 20px 16px 9px;
+            /* padding: 14px 20px 16px 9px; */
             font-family: 'Heebo', sans-serif;
             font-size: 1.125rem;
             &::placeholder{
@@ -116,8 +116,9 @@ export const Pass = styled.div`
                 /* margin-top:5px; */
                 /* justify-content: center; */
                 font-weight: 400;
-                color: #100022;
-                opacity: 0.5;
+                font-style: normal;
+                color: #857F96;
+                /* opacity: 0.5; */
             }
         }
         &:hover{
@@ -201,7 +202,7 @@ export const ButtonWrapper = styled.div`
         border-color: #390179;
         width: 450px;
         height: 48px;
-        margin-top: -2px;
+        /* margin-top: -2px; */
         margin-bottom: 24px;
         border-radius: 10px;
 
@@ -216,6 +217,7 @@ export const WrapperCheck = styled.div`
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
+    text-align: center;
     /* .ant-checkbox-checked .ant-checkbox-inner{
         background-color: #390179;
         border-color: #390179;
@@ -228,8 +230,8 @@ export const WrapperCheck = styled.div`
         border: #390179;
     } */
     .ant-checkbox-inner {
-        height:19px;
-        width: 19px;
+        height:20px;
+        width: 20px;
     }
     .ant-checkbox-checked .ant-checkbox-inner {
         background-color: #390179;
@@ -244,14 +246,23 @@ export const WrapperCheck = styled.div`
     .ant-checkbox-indeterminate .ant-checkbox-inner::after {
         background-color: #390179;
     }
+    .ant-checkbox-wrapper{
+        align-items: center;
+    }
+    .ant-checkbox-wrapper .ant-checkbox{
+        top:0;
+    }
     .ant-checkbox-wrapper:focus-visible .ant-checkbox-inner{
         border: none;
     }
 `;
 
 export const Official = styled.div`
-    margin-top: 205px;
-    margin-left: 160px;
+    position: absolute;
+    bottom: 40px;
+    left: 160px;
+    /* margin-top: 198px;
+    margin-left: 160px; */
     a{
         font-size: 12px;
         font-family: Manrope,sans-serif;
@@ -296,7 +307,18 @@ export const Divider = styled.div`
     font-size: 14px;
 
     /* margin-top: 5px; */
-    margin-bottom: 22px;
+    margin-bottom: 21px;
+
+    .login-form-forgot {
+        float: right;
+        font-size: 14px;
+        font-weight: 600;
+        color:rgb(57, 1, 121);
+        padding-bottom: 4px;
+    }
+    .login-form-forgot:hover {
+        color:rgb(57, 1, 121);
+    }
     
 `;
 
