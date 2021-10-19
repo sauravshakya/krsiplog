@@ -110,12 +110,14 @@ export const Pass = styled.div`
             /* opacity: 1; */
             /* padding: 14px 20px 16px 9px; */
             font-family: 'Heebo', sans-serif;
-            font-size: 1.125rem;
+            /* font-size: 1.125rem; */
+            font-size: 18px;
             &::placeholder{
+                font-size: 18px;
                 font-family: 'Heebo', sans-serif;
                 /* margin-top:5px; */
                 /* justify-content: center; */
-                font-weight: 400;
+                font-weight: normal;
                 font-style: normal;
                 color: #857F96;
                 /* opacity: 0.5; */
@@ -171,7 +173,7 @@ export const Sizer = styled.div`
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
-        margin-bottom: 3px;
+        margin-bottom: 6px;
     }
 `;
 export const Wrapper = styled.div`
@@ -213,6 +215,8 @@ export const ButtonWrapper = styled.div`
     }
 `;
 export const WrapperCheck = styled.div`
+    line-height: 20px;
+    height: 20px;
     font-family: Manrope,sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -232,6 +236,7 @@ export const WrapperCheck = styled.div`
     .ant-checkbox-inner {
         height:20px;
         width: 20px;
+        border-radius: 5px;
     }
     .ant-checkbox-checked .ant-checkbox-inner {
         background-color: #390179;
@@ -258,11 +263,12 @@ export const WrapperCheck = styled.div`
 `;
 
 export const Official = styled.div`
-    position: absolute;
+    /* position: absolute;
     bottom: 40px;
-    left: 160px;
-    /* margin-top: 198px;
-    margin-left: 160px; */
+    left: 160px; */
+    margin-top: 202px;
+    margin-left: 160px;
+    margin-bottom: 40px;
     a{
         font-size: 12px;
         font-family: Manrope,sans-serif;
@@ -296,6 +302,7 @@ export const Official = styled.div`
 export const Divider = styled.div`
     display: flex;
     width: 450px;
+    height: 20px;
     flex-direction: row;
     align-content: center;
     align-items: flex-end;
@@ -311,10 +318,11 @@ export const Divider = styled.div`
 
     .login-form-forgot {
         float: right;
+        height: 20px;
+        line-height: 20px;
         font-size: 14px;
         font-weight: 600;
         color:rgb(57, 1, 121);
-        padding-bottom: 4px;
     }
     .login-form-forgot:hover {
         color:rgb(57, 1, 121);
