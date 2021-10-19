@@ -340,7 +340,7 @@ export const Placement = styled.div`
     } */
     img{
         margin-right: 8px;
-        /* margin-left: 2px; */
+        margin-bottom: 3px;
         width: 20px;
         height: 20px;
     }
