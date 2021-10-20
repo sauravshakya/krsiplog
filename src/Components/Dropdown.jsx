@@ -4,6 +4,7 @@ import React, { FC, useState } from 'react';
 import { Menu, Dropdown, Select } from 'antd';
 import 'antd/dist/antd.css';
 import { DownOutlined } from '@ant-design/icons';
+import { RiArrowDownSLine } from 'react-icons/ri';
 // const {  DownOutlined  } = icons;
 import { LangStyle, LangOut, Font } from './DropStyle.jsx'
 
@@ -49,15 +50,17 @@ function LanguageDropdown(){
     </Menu>
     </LangOut>
     );
-    const downArrow = { height: '16px' , width: '16px' , marginTop: '2px', color: '#390179'}
     
+    const downArrow = { height: '16px', width: '16px' , marginTop: '4px', color: '#390179', position: 'relative', top:2 }
+
     return (
         <Dropdown overlay={menu} trigger={['click']}>
           <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
           <img src={ uk } alt="en" />
             <Font>{value}</Font> 
             {/* <Select></Select> */}
-            <DownOutlined style = { downArrow } />
+            {/* <DownOutlined style = { downArrow } /> */}
+            <RiArrowDownSLine style = { downArrow } />
           </a>
         </Dropdown>
     );

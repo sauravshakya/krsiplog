@@ -28,6 +28,8 @@ function App() {
     console.log([ {email}, {password}, {checkbox} ]);
     // console.log([details]);
   } 
+  const eyeIcon = { fontSize:'18px' }
+
   return (
     <>
     <Wrapper>
@@ -88,7 +90,7 @@ function App() {
         placeholder="*********************"
         onChange={ (e) => setPassword( e.target.value ) }
         value={password}
-        iconRender={visible => (visible ? <RiEyeLine size='18px' /> : <RiEyeCloseLine size='18px' />
+        iconRender={visible => (visible ? <RiEyeLine style={eyeIcon} /> : <RiEyeCloseLine style={eyeIcon} />
         )}>
         </Input.Password>
         </Pass>

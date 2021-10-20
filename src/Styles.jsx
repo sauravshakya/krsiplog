@@ -41,10 +41,9 @@ export const CustomLabel = styled.label`
 `;
 export const CustomInput = styled.div`
     .ant-input{
-        /* margin-top: -1px; */
         background-color: #F5F2F8;
         border-radius: 10px;
-        border: none;
+        border-color: #f000 !important;
         color: rgba(0,0,0,.85);
         width: 450px;
         height: 48px;
@@ -53,17 +52,16 @@ export const CustomInput = styled.div`
         font-size: 1.125rem;
         padding: 15px 20px 15px 20px;
         margin-bottom: 48px !important;
-        /* box-shadow: 0 0 0 2px rgb(57 1 121 / 20%); */
-        border-color: rgb(215, 204, 228) !important;
         outline: 0;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
         
     &:hover{
-        border-color: rgb(215, 204, 228);
+        /* border-color: rgb(215, 204, 228); */
+        border-color: rgb(215, 204, 228) !important;
     }
     &:focus{
-        border-color: rgb(215, 204, 228);
+        /* border-color: rgb(215, 204, 228); */
         box-shadow: none;
     }
     &::placeholder{
@@ -73,6 +71,9 @@ export const CustomInput = styled.div`
         opacity: 0.5;
         font-family: 'Heebo', sans-serif;;
     }
+}
+.ant-input:active, .ant-input:focus, .ant-input-focused{
+    border: none;
 }
 `;
 export const Pass = styled.div`
@@ -91,7 +92,11 @@ export const Pass = styled.div`
         background-color: #F5F2F8;
         /* padding: 14px 20px 16px 9px; */
         padding: 15px 20px;
+        border-radius: 10px;
     }
+    .ant-input-affix-wrapper > input.ant-input:focus{
+        border: none !important;
+    } 
     .ant-input-password{
         /* margin-top: 2px; */
         color:rgba(0,0,0,.85);
@@ -124,10 +129,11 @@ export const Pass = styled.div`
             }
         }
         &:hover{
-        border-color: rgb(215, 204, 228) !important;
+            border-color: rgb(215, 204, 228) !important;
         }
         .ant-input-suffix{
             margin-right: 18px;
+            margin-left: 0px;
         }
         /* &:focus{
             border-color: rgb(215, 204, 228) !important;
@@ -237,6 +243,31 @@ export const WrapperCheck = styled.div`
         height:20px;
         width: 20px;
         border-radius: 5px;
+        &:hover{
+        /* border-color: #390179;
+        outline:none; */
+        /* border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none; */
+        }
+    }
+    .ant-checkbox.ant-checkbox-checked{
+        &:focus{
+            outline: 0 !important;
+            border: none;
+            background-color: transparent;
+            resize: none;
+        }
+        &:hover{
+            border: none;
+            background-color: transparent;
+            resize: none;
+            outline: 0 !important;
+        }
+    }
+    .ant-checkbox-checked::after{
+        border:none;
     }
     .ant-checkbox-checked .ant-checkbox-inner {
         background-color: #390179;
@@ -369,5 +400,6 @@ export const Placement = styled.div`
         justify-content: center;
     }
 `;
+    
 
   
