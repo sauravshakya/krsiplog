@@ -91,6 +91,7 @@ export const Pass = styled.div`
     .ant-input-affix-wrapper > input.ant-input{
         background-color: #F5F2F8;
         /* padding: 14px 20px 16px 9px; */
+        border: none !important;
         padding: 15px 20px;
         border-radius: 10px;
     }
