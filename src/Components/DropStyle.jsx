@@ -67,7 +67,7 @@ export const LangOut = styled.div`
 `;
 export const Font = styled.span`
     text-transform: uppercase;
-    margin-right: 2px;
+    /* margin-right: 2px; */
     font-weight: 600;
     color: rgb(57, 1, 121);
     display: inline-block;

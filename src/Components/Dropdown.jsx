@@ -51,12 +51,12 @@ function LanguageDropdown(){
     </LangOut>
     );
     
-    const downArrow = { height: '16px', width: '16px' , marginTop: '4px', color: '#390179', position: 'relative', top:2 }
+    const downArrow = { height: '16px', width: '16px' , marginTop: '4px', color: '#390179', position: 'relative', top:2 ,left:2}
 
     return (
         <Dropdown overlay={menu} trigger={['click']}>
           <a className="ant-dropdown-link" onClick={ e => e.preventDefault() }>
-          <img src={ uk } alt="en" />
+            <img src={ uk } alt="en" />
             <Font>{value}</Font> 
             {/* <Select></Select> */}
             {/* <DownOutlined style = { downArrow } /> */}

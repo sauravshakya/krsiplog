@@ -115,7 +115,7 @@ function App() {
     <Form.Item>
       <ButtonWrapper>
         <Button type="primary" onClick={submitHandler} htmlType="submit" className="login-form-button">
-          Log in
+          Log In
         </Button>
       </ButtonWrapper>
       <Sizer>

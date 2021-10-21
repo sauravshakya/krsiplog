@@ -69,11 +69,15 @@ export const CustomInput = styled.div`
         font-weight: 400;
         justify-content: center;
         opacity: 0.5;
+        /* padding: 15px 20px; */
         font-family: 'Heebo', sans-serif;;
     }
 }
 .ant-input:active, .ant-input:focus, .ant-input-focused{
     border: none;
+    &::placeholder{
+        padding: 0px 1px;
+    }
 }
 `;
 export const Pass = styled.div`
@@ -211,7 +215,7 @@ export const ButtonWrapper = styled.div`
         border-color: #390179;
         width: 450px;
         height: 48px;
-        /* margin-top: -2px; */
+        margin-top: 0px;
         margin-bottom: 24px;
         border-radius: 10px;
 
@@ -369,7 +373,7 @@ export const Placement = styled.div`
     /* padding: 0.5rem; */
     height: 40px !important;
     line-height: 1.5715;
-    max-width: 89px;
+    width: 89px;
     /* .AppCountry{
         font-size: 10px;
         border: 1px solid #390179; 
