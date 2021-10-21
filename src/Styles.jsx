@@ -18,10 +18,9 @@ export const Title = styled.h5`
     font-weight: bold;
     font-size: 32px;
     line-height: 32px;
-    
 `;
 export const Main = styled.div`
-    margin-top: 217px;
+    margin-top: 218px;
     margin-left: 160px;
     margin-right: 148px;
 `;
@@ -61,22 +60,31 @@ export const CustomInput = styled.div`
         border-color: rgb(215, 204, 228) !important;
     }
     &:focus{
-        /* border-color: rgb(215, 204, 228); */
+        /* border-color: rgb(215, 204, 228) !important; */
         box-shadow: none;
     }
+    /* &::focused{
+        border-color: rgb(215, 204, 228) !important;
+    } */
     &::placeholder{
         color: #100022;
         font-weight: 400;
         justify-content: center;
         opacity: 0.5;
-        /* padding: 15px 20px; */
         font-family: 'Heebo', sans-serif;;
     }
 }
-.ant-input:active, .ant-input:focus, .ant-input-focused{
-    border: none;
+.ant-input:focus, .ant-input-focused{
+    /* border: none; */
+    border-color: rgb(215, 204, 228) !important;
+    &::before{
+        padding: 0px 0px;
+    }
     &::placeholder{
-        padding: 0px 1px;
+        padding: 0px 0px;
+    }
+    &::after{
+        padding: 0px 0px;
     }
 }
 `;
@@ -88,9 +96,16 @@ export const Pass = styled.div`
     }
     .ant-input-affix-wrapper.ant-input-password{
         border-color: #f000 !important;
+        /* border:none; */
         outline: 0;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
+        &:active{
+        border-color: rgb(215, 204, 228) !important;
+        }
+    }
+    .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused{
+        border-color: rgb(215, 204, 228) !important;
     }
     .ant-input-affix-wrapper > input.ant-input{
         background-color: #F5F2F8;
@@ -110,7 +125,9 @@ export const Pass = styled.div`
         width: 100%;
         height: 48px;
         .ant-input:active, .ant-input:focus, .ant-input-focused{
-            border: none;
+            /* border: none; */
+            border-color: rgb(215, 204, 228) !important;
+
         }
         .ant-input{
             background-color: #F5F2F8 !important;
@@ -140,30 +157,6 @@ export const Pass = styled.div`
             margin-right: 18px;
             margin-left: 0px;
         }
-        /* &:focus{
-            border-color: rgb(215, 204, 228) !important;
-            box-shadow: none;
-            border-color: rgb(215, 204, 228) !important;
-        } */
-        /* &::placeholder{
-            color: #ff0c0c;
-        } */
-        /* .ant-input-affix-wrapper-active, .ant-input-affix-wrapper-focus, .ant-input-affix-wrapper-focused {
-            box-shadow: none !important;
-            border-color: none !important; 
-            outline: none !important;
-            -webkit-box-shadow:none !important;
-        } */
-        /* .ant-input-focus, .ant-input-focused{
-            box-shadow: none !important;
-            outline: none;
-        } */
-        /* .ant-input-password *:focus {
-            border-color: #ff0000;
-            outline: 0;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-        } */
     }
 `;
 export const Sizer = styled.div`
@@ -302,7 +295,7 @@ export const Official = styled.div`
     /* position: absolute;
     bottom: 40px;
     left: 160px; */
-    margin-top: 202px;
+    margin-top: 201px;
     margin-left: 160px;
     margin-bottom: 40px;
     a{
