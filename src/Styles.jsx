@@ -44,7 +44,7 @@ export const CustomInput = styled.div`
         background-color: #F5F2F8;
         border-radius: 10px;
         border-color: #f000 !important;
-        color: rgba(0,0,0,.85);
+        color: #857F96;
         width: 450px;
         height: 48px;
         font-weight: 400;
@@ -104,7 +104,7 @@ export const Pass = styled.div`
     } 
     .ant-input-password{
         /* margin-top: 2px; */
-        color:rgba(0,0,0,.85);
+        color:#857F96;
         background-color: #F5F2F8;
         border-radius: 10px;
         width: 100%;
