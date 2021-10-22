@@ -156,6 +156,7 @@ export const Sizer = styled.div`
 
     .Sign{
         font-size: 12px !important;
+        line-height: 12px;
         color: rgb(26, 99, 244) !important; 
         cursor: pointer;
         font-weight: 700;
@@ -289,6 +290,7 @@ export const Official = styled.div`
     margin-top: 207px;
     margin-left: 160px;
     margin-bottom: 40px;
+    line-height: 12px;
     a{
         font-size: 12px;
         line-height: 12px;
