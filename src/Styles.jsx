@@ -291,6 +291,7 @@ export const Official = styled.div`
     margin-bottom: 40px;
     a{
         font-size: 12px;
+        line-height: 12px;
         font-family: Manrope,sans-serif;
         font-style: normal;
         color: rgb(26, 99, 244);
