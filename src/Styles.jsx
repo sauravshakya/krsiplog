@@ -155,7 +155,7 @@ export const Sizer = styled.div`
     font-weight: 700;
 
     .Sign{
-        font-size: 12px !important;
+        font-size: 12px;
         line-height: 12px;
         color: rgb(26, 99, 244) !important; 
         cursor: pointer;
@@ -163,12 +163,13 @@ export const Sizer = styled.div`
         margin-bottom: 0px;
         /* margin-top: 50px; */
     }
-    p{
+    .Register{
         color: rgb(158, 153, 171);
         font-family: Manrope, sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
+        line-height: 14px;
         margin-bottom: 6px;
     }
 `;
@@ -287,10 +288,11 @@ export const Official = styled.div`
     /* position: absolute;
     bottom: 40px;
     left: 160px; */
-    margin-top: 207px;
+    margin-top: 219px;
     margin-left: 160px;
     margin-bottom: 40px;
     line-height: 12px;
+    height: 12px;
     a{
         font-size: 12px;
         line-height: 12px;
