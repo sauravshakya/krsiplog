@@ -100,9 +100,9 @@ export const Pass = styled.div`
         outline: 0;
         -webkit-box-shadow: none !important;
         box-shadow: none !important;
-        &:active{
+        /* &:active{
         border-color: rgb(215, 204, 228) !important;
-        }
+        } */
     }
     .ant-input-affix-wrapper:focus, .ant-input-affix-wrapper-focused{
         border-color: rgb(215, 204, 228) !important;
@@ -124,10 +124,9 @@ export const Pass = styled.div`
         border-radius: 10px;
         width: 100%;
         height: 48px;
-        .ant-input:active, .ant-input:focus, .ant-input-focused{
+        &:active, &:focus, .ant-input-focused{
             /* border: none; */
             border-color: rgb(215, 204, 228) !important;
-
         }
         .ant-input{
             background-color: #F5F2F8 !important;
