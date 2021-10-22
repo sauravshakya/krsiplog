@@ -67,35 +67,26 @@ export const CustomInput = styled.div`
         border-color: rgb(215, 204, 228) !important;
     } */
     &::placeholder{
-        color: #100022;
+        color: #857F96;
         font-weight: 400;
         justify-content: center;
-        opacity: 0.5;
+        /* opacity: 0.5; */
         font-family: 'Heebo', sans-serif;;
     }
 }
 .ant-input:focus, .ant-input-focused{
     /* border: none; */
     border-color: rgb(215, 204, 228) !important;
-    &::before{
-        padding: 0px 0px;
-    }
-    &::placeholder{
-        padding: 0px 0px;
-    }
-    &::after{
-        padding: 0px 0px;
-    }
 }
 `;
 export const Pass = styled.div`
     /* padding: 0px 20px 0px 20px; */
-    margin-bottom: 24px !important;
+    margin-bottom: 48px !important;
     .ant-input-affix-wrapper{
         padding: 0;
     }
     .ant-input-affix-wrapper.ant-input-password{
-        border-color: #f000 !important;
+        border-color: #f000;
         /* border:none; */
         outline: 0;
         -webkit-box-shadow: none !important;
@@ -115,7 +106,7 @@ export const Pass = styled.div`
         border-radius: 10px;
     }
     .ant-input-affix-wrapper > input.ant-input:focus{
-        border: none !important;
+        /* border: none !important; */
     } 
     .ant-input-password{
         /* margin-top: 2px; */
@@ -126,7 +117,7 @@ export const Pass = styled.div`
         height: 48px;
         &:active, &:focus, .ant-input-focused{
             /* border: none; */
-            border-color: rgb(215, 204, 228) !important;
+            border: 1px solid rgb(215, 204, 228) !important;
         }
         .ant-input{
             background-color: #F5F2F8 !important;
@@ -164,10 +155,11 @@ export const Sizer = styled.div`
     font-weight: 700;
 
     .Sign{
-        font-size: 14px;
+        font-size: 12px !important;
         color: rgb(26, 99, 244) !important; 
         cursor: pointer;
         font-weight: 700;
+        margin-bottom: 0px;
         /* margin-top: 50px; */
     }
     p{
@@ -294,7 +286,7 @@ export const Official = styled.div`
     /* position: absolute;
     bottom: 40px;
     left: 160px; */
-    margin-top: 201px;
+    margin-top: 207px;
     margin-left: 160px;
     margin-bottom: 40px;
     a{
@@ -342,7 +334,7 @@ export const Divider = styled.div`
     font-size: 14px;
 
     /* margin-top: 5px; */
-    margin-bottom: 21px;
+    margin-bottom: 45px;
 
     .login-form-forgot {
         float: right;
@@ -350,10 +342,10 @@ export const Divider = styled.div`
         line-height: 20px;
         font-size: 14px;
         font-weight: 600;
-        color:rgb(57, 1, 121);
+        color:#390179;
     }
     .login-form-forgot:hover {
-        color:rgb(57, 1, 121);
+        color:#390179;
     }
     
 `;

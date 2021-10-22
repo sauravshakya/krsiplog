@@ -120,7 +120,7 @@ function App() {
       </ButtonWrapper>
       <Sizer>
         <p>Don't have an account?</p>
-        <p><a className="Sign">Sign up?</a></p>
+        <p className="Sign">Sign up?</p>
       </Sizer> 
     </Form.Item>
   </Form>
